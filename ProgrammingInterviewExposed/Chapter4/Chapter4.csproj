@@ -7,7 +7,7 @@
     <ProjectGuid>{2F7BA9D0-541B-4DBF-8849-82CB6F5671B4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProgrammingInterviewExposed</RootNamespace>
+    <RootNamespace>ProgrammingInterviewExposed.Chapter4</RootNamespace>
     <AssemblyName>ProgrammingInterviewExposed</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\ListElement.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
