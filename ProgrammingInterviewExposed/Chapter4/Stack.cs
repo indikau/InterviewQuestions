@@ -12,22 +12,22 @@
             this.root = new ListElement<T>(value, null);
         }
 
-        public void Push(ListElement<T> node)
+        public void Push(T value)
         {
-            if (node == null)
-            {
-                throw new ArgumentNullException("Given node is null, therefore we will not insert into the stack");
-            }
-
-            node.Next = root;
+            var node = new ListElement<T>(value, root);
             root = node;
         }
 
         public T Pop()
         {
-            var top = root;
+            if (root == null)
+            {
+                throw new StackEmptyException("Stack is empty.");
+            }
+
+            var top = root.Value;
             root = root.Next;
-            return top.Value;
+            return top;
         }
     }
 }
