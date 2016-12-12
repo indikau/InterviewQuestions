@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acyclic.cs" />
     <Compile Include="Components\ListElement.cs" />
     <Compile Include="Components\Node.cs" />
     <Compile Include="FindingElements.cs" />
     <Compile Include="ListDeleteAndInsertAfter.cs" />
     <Compile Include="ListFlattening.cs" />
+    <Compile Include="ListUnflatten.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Stack.cs" />
